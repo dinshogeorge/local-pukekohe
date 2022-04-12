@@ -60,6 +60,15 @@ h5 {
    
 }
 
+.splbutton {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #ff6853;
+  color: #fff;
+  color: #fff;
+  text-decoration: none;
+}
+
 p {
   margin-bottom: 10px;
   font-family: Poppins, sans-serif;
@@ -108,10 +117,13 @@ blockquote {
   display: block;
   height: 650px;
   background-color: #2c2c2c;
-  background-image: -webkit-linear-gradient(270deg, rgba(14, 23, 36, .28), rgba(14, 23, 36, .28)), url('../images/pukekohe-plumbers.jpg');
-  background-image: linear-gradient(180deg, rgba(14, 23, 36, .28), rgba(14, 23, 36, .28)), url('../images/pukekohe-plumbers.jpg');
+  /* background-image: -webkit-linear-gradient(270deg, rgba(14, 23, 36, .28), rgba(14, 23, 36, .28)), url('../images/pukekohe-plumbers.jpg');
+  background-image: linear-gradient(180deg, rgba(14, 23, 36, .28), rgba(14, 23, 36, .28)), url('../images/pukekohe-plumbers.jpg'); */
+  background-image:url('../images/pukekohe-plumbers.jpg');
+  background-image:url('../images/pukekohe-plumbers.jpg');
   background-position: 0px 0px, 90% 0px;
-  background-size: auto, cover;
+  /* background-size: auto, cover; */
+  background-size: cover;
   background-repeat: repeat, no-repeat;
   background-attachment: scroll;
 }
@@ -227,6 +239,62 @@ blockquote {
   background-size: 45px;
 }
 
+.bottom-icon {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+  float: left;
+  /* background-image: url('../images/phone-white.png'); */
+  background-position: 50% 50%;
+  background-size: 63px;
+  background-repeat: no-repeat;
+}
+
+.top-icon.icon-2 {
+  background-image: url('../images/marker.png');
+  background-size: 63px;
+}
+
+.bottom-icon.icon-3 {
+  background-image: url('../images/marker-white.png');
+  background-size: 63px;
+}
+.bottom-icon.icon-4 {
+  background-image: url('../images/phone-white.png');
+  background-size: 63px;
+}
+
+.top-icon.smaller {
+  position: relative;
+  left: -6px;
+  top: 20px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  float: none;
+  background-size: 45px;
+}
+
+.bottom-icon.smaller {
+  position: relative;
+  left: -6px;
+  top: 20px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  float: none;
+  background-size: 45px;
+}
+
+.top-icon.smaller.icon-3 {
+  background-image: url('../images/mail.png');
+  background-size: 45px;
+}
+
 .top-content {
   position: relative;
   top: 11px;
@@ -248,6 +316,13 @@ blockquote {
   overflow: visible;
   clear: both;
   color: #276dc4;
+  font-size: 16px;
+}
+
+.top-text.spl-footer {
+  overflow: visible;
+  clear: both;
+  color: #fff;
   font-size: 16px;
 }
 
@@ -544,22 +619,50 @@ blockquote {
   background-repeat: no-repeat;
 }
 
-.service-icon.maintenance {
-  background-image: url('../images/plumbing-repairs.png');
+.service-icon.drains {
+  background-image: url('../images/drain-unblocking-icon.png');
   background-size: 100px;
 }
 
-.service-icon.filters {
-  background-image: url('../images/water-filter-installation.png');
+
+.service-icon.leaks {
+  background-image: url('../images/water-leak-repairs.png');
   background-size: 100px;
 }
+
+
+.service-icon.hotwaterrepairs {
+  background-image: url('../images/hot-water-cylinder-icon.png');
+  background-size: 100px;
+}
+
+.service-icon.repairs {
+  background-image: url('../images/plumbing-repairs-icon.png');
+  background-size: 100px;
+}
+
+.service-icon.toilet {
+  background-image: url('../images/blocked-toilet-repairs.png');
+  background-size: 100px;
+}
+
+.service-icon.waterfilter {
+  background-image: url('../images/water-filter.png');
+  background-size: 100px;
+}
+
+.service-icon.waterpump {
+  background-image: url('../images/water-pump.png');
+  background-size: 100px;
+}
+
 
 .service-title {
   margin-bottom: 10px;
   color: #276dc4;
   font-size: 17px;
   line-height: 26px;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .read-more {
@@ -758,8 +861,9 @@ blockquote {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-image: -webkit-linear-gradient(270deg, #88b2e6, #88b2e6);
-  background-image: linear-gradient(180deg, #88b2e6, #88b2e6);
+  background-image: -webkit-linear-gradient(270deg, #215fad, #215fad;);
+  background-image: linear-gradient(180deg, #215fad, #215fad);
+
 }
 
 .footer-logo {
@@ -1101,6 +1205,13 @@ blockquote {
   font-weight: 500;
   text-decoration: none;
 }
+.footer_heading {
+  margin-bottom: 3px;
+  font-family: Oswald, sans-serif;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+}
 
 .heading:hover {
   text-decoration: none;
@@ -1289,12 +1400,16 @@ html.w-mod-js *[data-ix="display-none-on-load"] {
 @media (min-width: 1400px) {
   .banner {
     height: 800px;
-    background-position: 0px 0px, 50% 0px;
+    background-size: cover;
+    background-position-x: 45%;
+
   }}
 
 @media (max-width: 991px) {
   .banner {
     height: 700px;
+    background-size: cover;
+    background-position-x: 45%;
   }
   .top-navigation {
     display: none;
@@ -1398,6 +1513,8 @@ html.w-mod-js *[data-ix="display-none-on-load"] {
 @media (max-width: 767px) {
   .banner {
     height: 600px;
+    background-size: cover;
+    background-position-x: 45%;
   }
   .section {
     padding-top: 10px;
@@ -1451,7 +1568,9 @@ html.w-mod-js *[data-ix="display-none-on-load"] {
 @media (max-width: 479px) {
   .banner {
     height: 500px;
-    background-position: 0px 0px, 45% 0px;
+    /* background-position: 0px 0px, 45% 0px; */
+    background-size: cover;
+    background-position-x: 45%;
   }
   .top-text.in-footer {
     margin-top: 25px;
@@ -1471,8 +1590,9 @@ html.w-mod-js *[data-ix="display-none-on-load"] {
     font-size: 16px;
   }
   .left-wrapper.color {
-    height: 800px;
-    max-height: 800px;
+    /* height: 1000px; */
+    max-height: 1000px;
+    margin-top: 50px;
   }
   .left-wrapper.photo {
     height: 400px;
